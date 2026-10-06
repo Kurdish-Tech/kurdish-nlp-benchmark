@@ -1,0 +1,50 @@
+{
+  "per_dialect_sample_docs": {
+    "Kurmanji": 300,
+    "Sorani": 300,
+    "Zazaki": 166
+  },
+  "method": "tokens/word, <=300 heldout docs/dialect, num_words>=20, text[:2000], special tokens stripped",
+  "fertility": {
+    "kurdish-bpe-32k": {
+      "Kurmanji": 1.427,
+      "Sorani": 1.974,
+      "Zazaki": 2.701
+    },
+    "kurdish-bpe-64k": {
+      "Kurmanji": 1.342,
+      "Sorani": 1.793,
+      "Zazaki": 2.408
+    },
+    "kurdish-unigram-32k": {
+      "Kurmanji": 1.472,
+      "Sorani": 1.843,
+      "Zazaki": 2.58
+    },
+    "kurdish-unigram-64k": {
+      "Kurmanji": 1.385,
+      "Sorani": 1.633,
+      "Zazaki": 2.29
+    },
+    "cl100k_base (GPT-4)": {
+      "Kurmanji": 2.61,
+      "Sorani": 6.938,
+      "Zazaki": 3.038
+    },
+    "o200k_base (GPT-4o)": {
+      "Kurmanji": 2.361,
+      "Sorani": 3.984,
+      "Zazaki": 2.732
+    },
+    "XLM-RoBERTa (base)": {
+      "Kurmanji": 1.751,
+      "Sorani": 3.695,
+      "Zazaki": 2.527
+    },
+    "NLLB-200 (distilled-600M)": {
+      "Kurmanji": 1.93,
+      "Sorani": 2.336,
+      "Zazaki": 2.548
+    }
+  }
+}

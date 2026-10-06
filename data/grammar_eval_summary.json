@@ -1,0 +1,20 @@
+{
+  "source_dataset": "kurdish-tech/kurdish-grammar-eval",
+  "note": "Auto-mined minimal pairs (correct vs. corrupted sentence), not human-verified. Counts below are exact file line counts.",
+  "categories": {
+    "kurmanji_copula_agreement": 15,
+    "kurmanji_ezafe_deletion": 300,
+    "kurmanji_indefinite_duplication": 300,
+    "sorani_copula_agreement": 15,
+    "sorani_ezafe_deletion": 132,
+    "sorani_indefinite_duplication": 270
+  },
+  "dialects_covered": ["Kurmanji", "Sorani"],
+  "dialects_not_covered": ["Zazaki"],
+  "cross_validation_spot_check": {
+    "date": "2026-10-06",
+    "method": "5 pairs (10 sentences) from kurmanji_copula_agreement.jsonl checked against an independent third-party Kurdish grammar-checking tool (mazdek AI, mazdek_check_grammar).",
+    "result": "10/10 agreement: all 5 'correct' sentences were flagged clean, all 5 'corrupted' sentences were flagged and corrected back to the exact original 'correct' text.",
+    "caveat": "Small sample (n=5 pairs), one category only. Supportive signal for this category's label quality, not a full validation of the dataset."
+  }
+}
