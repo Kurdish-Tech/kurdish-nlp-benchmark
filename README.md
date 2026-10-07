@@ -1,12 +1,14 @@
-# Kurdish NLP Benchmark
+# Kurdish NLP Metrics
 
-An open, independent benchmark for measuring how well language technology actually handles Kurdish — Kurmancî, Soranî, and Zazakî.
+Open, independent, reproducible metrics for how well language technology actually handles Kurdish — Kurmancî, Soranî, and Zazakî.
 
 ## Why this exists
 
 Kurdish is spoken by 30–40 million people across three major varieties and two scripts, and almost nothing in mainstream NLP evaluation reflects that. When a tokenizer, a translation API, or a grammar checker claims to "support Kurdish," there has been no shared, public, reproducible way to check what that actually means — per dialect, not as one blended average.
 
-This repository is that shared reference point. It's maintained by [Kurdish-Tech](https://github.com/Kurdish-Tech), an open-source org with no commercial product of its own to defend — the results here aren't used to sell anything, which is what makes an independent benchmark worth trusting in the first place.
+This repository is that shared reference point. It's maintained by [Kurdish-Tech](https://github.com/Kurdish-Tech), an open-source org with no commercial product of its own to defend — the results here aren't used to sell anything, which is what makes independent numbers worth trusting in the first place.
+
+**What this is, precisely:** intrinsic measurements of tools (how a tokenizer behaves on Kurdish text, how much of a phenomenon an eval set covers) — not a labeled task benchmark with a leaderboard of model scores. If you're looking for the latter, see [kurdish-grammar-eval](https://huggingface.co/datasets/kurdish-tech/kurdish-grammar-eval) for the minimal-pairs data that could feed one.
 
 ## What's measured
 
@@ -44,7 +46,7 @@ These pairs are auto-mined, not human-verified, and there is no Zazakî coverage
 ## Honest limitations
 
 - Zazakî is the weakest-covered dialect in every measurement here — smallest corpus share, no grammar-eval coverage, least robust fertility numbers. This isn't hidden; it's the headline finding as much as any score is.
-- The grammar eval is auto-mined. Treat it as a starting point for probing models, not a finished, human-audited benchmark.
+- The grammar eval is auto-mined. Treat it as a starting point for probing models, not a finished, human-audited evaluation set.
 - This is v1: tokenizer fertility and grammar-eval coverage only. It does not yet cover translation quality, speech recognition, or spell-checking — those are natural next additions.
 
 ## Get your tool measured
